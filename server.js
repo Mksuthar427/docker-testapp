@@ -7,7 +7,7 @@ const PORT = 5050;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-const URL = "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.8";
+const URL = "mongodb://admin:qwerty@mongo:27017/";
 const client = new MongoClient(URL);
 
 //GET all users
